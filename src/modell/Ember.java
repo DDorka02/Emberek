@@ -37,24 +37,11 @@ public class Ember {
         return 2024 - szulEv;
     }
 
-	/* elfedjük az adattag valódi típusát, 
-    az absztrakció itt: ArrayList<String> --> String[]
-    */
     public String[] getNyelvek() {
         String[] ny = new String[nyelvek.size()];
-        /* saját kóddal: */
-//        for (int i = 0; i < ny.length; i++) {
-//            ny[i] = nyelvek.get(i);
-//        }
-        
-        /* Java API használatával: */
         return nyelvek.toArray(ny);
     }
     
-	/* set */
-	
-	/* add */
-    //public void addNyelv(String nyelv){
     public void ujNyelv(String nyelv){
         this.nyelvek.add(nyelv);
     }
@@ -65,7 +52,6 @@ public class Ember {
         }
     }
 
-	/* @Override és saját */
     public String bemutatkozas() {
         String s = nev + " vagyok, anyanyelvem: " + nyelvek.get(0);
         int kor = 2024-this.getSzulEv();
