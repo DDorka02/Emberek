@@ -31,7 +31,6 @@ public class EmberekBemutatkoznak {
             s += "\n" + ember.bemutatkozas();
             s += "\n-------------";
         }
-        
         return s;
     }
     

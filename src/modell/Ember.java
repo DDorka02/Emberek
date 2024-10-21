@@ -23,8 +23,7 @@ public class Ember {
         this.szulEv = szulEv;
         this.nyelvek = nyelvek;
     }
-    
-	/* get / is */
+
     public String getNev() {
         return nev;
     }
